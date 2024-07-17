@@ -51,10 +51,18 @@ main>section {
     background-color: #FF900E;
     color: white;
     padding: 20px 25px;
+    padding: 1.25em 1.50em;
     font-size: 1.25rem;
     border: none;
     font-weight: 600;
     border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover{
+    transform: translateY(-8px);
+    background-color: #e27f0e;
+    cursor: pointer;
 }
 
 
@@ -75,7 +83,10 @@ main>section {
 
 .nav-item {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 17px;
+    padding: .5em;
+    transition: background-color .3s ease-in-out , transform .3s ease-in-out;
+    border-radius: .4em;
 }
 
 .nav-link {
@@ -88,6 +99,19 @@ main>section {
 .banner {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.nav-item:hover{
+    background-color: #FF900E ;
+    transform: scale(1.1)  translateY(-2px);
+}
+
+.nav-link-home{
+    background-color: #FF900E ;
+    transform: scale(1.1)  translateY(-2px);
+    list-style: none;
+    padding: .5em;
+    border-radius: .4em;
 }
 
 /* banner Related style */
@@ -222,6 +246,12 @@ main>section {
 
 .sponsor-companies img{
     filter: grayscale(100%);
+    transition: all .3s;
+}
+
+.sponsor-companies img:hover{
+    filter: grayscale(0%);
+    /* transform: scale(1.2); */
 }
 
 
